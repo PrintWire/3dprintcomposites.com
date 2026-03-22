@@ -1,0 +1,183 @@
+baseURL = "https://3dprintcomposites.com/"
+languageCode = "en-us"
+title = "3D Print Composites"
+theme = "printwire"
+
+[params]
+tagline       = "Additive manufacturing with carbon fibre, glass fibre, Kevlar, and bio-composite materials for lightweight structural applications."
+description   = "3D Print Composites covers composite additive manufacturing — from continuous fibre reinforcement in FDM to chopped carbon fibre SLS and hemp bio-composite materials research."
+keywords      = "composite 3D printing, carbon fibre AM, continuous fibre printing, Kevlar 3D print, bio-composite AM, glass fibre additive manufacturing"
+logoEmoji     = "🌿"
+contactEmail  = "maxdavisgroup@gmail.com"
+footerServicesLabel = "Services"
+
+colorPrimary      = "#4ade80"
+colorPrimaryDark  = "#22c55e"
+colorPrimaryLight = "#86efac"
+colorBgDark       = "#030a05"
+colorBgSection    = "#060e07"
+colorBgCard       = "#0a140b"
+colorBgCardHover  = "#0e1c10"
+
+fontPrimary   = "Rajdhani"
+fontSecondary = "Source+Sans+3"
+
+newsFallbackImages = ["https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"]
+
+heroEyebrow  = "Composite Additive Manufacturing"
+heroTitle    = "3D Print <em>Composites</em>"
+heroSubtitle = "Additive manufacturing with carbon fibre, glass fibre, Kevlar, and bio-composite materials for lightweight structural applications."
+heroCta1Text = "Explore Services"
+heroCta1URL  = "/services/"
+heroCta2Text = "Get a Quote"
+heroCta2URL  = "/contact/"
+heroImage    = "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
+
+overviewTitle   = "Composite AM for Structural Applications"
+overviewText    = "Continuous carbon fibre in FDM, chopped glass fibre in SLS, and bio-derived hemp composite resins — delivering aerospace-grade strength-to-weight ratios without traditional layup."
+overviewBtnText = "View Services"
+overviewBtnURL  = "/services/"
+
+applicationsTitle = "Industries We Serve"
+servicesTitle    = "3D Print Composites Services"
+servicesSubtitle = "Additive manufacturing with carbon fibre, glass fibre, Kevlar, and bio-composite materials for lightweight structural applications."
+clusterTitle = "Related 3D Printing Resources"
+newsletterTitle = "Industry Updates to Your Inbox"
+newsletterText  = "Research breakthroughs and industry news — delivered monthly."
+ctaTitle   = "Start Your Project"
+ctaText    = "Additive manufacturing with carbon fibre, glass fibre, Kevlar, and bio-composite materials for lightweight structural applications."
+ctaBtnText = "Get in Touch"
+ctaBtnURL  = "/contact/"
+
+[[params.stats]]
+count  = 60
+suffix = "%"
+label  = "Weight Reduction vs Metal"
+
+[[params.stats]]
+count  = 800
+suffix = "MPa"
+label  = "UTS Continuous CF Parts"
+
+[[params.stats]]
+count  = 35
+suffix = "+"
+label  = "Composite Material Systems"
+
+[[params.stats]]
+count  = 5
+suffix = "x"
+label  = "Stiffness vs Unreinforced Nylon"
+
+
+[[params.applications]]
+title       = "Aerospace Structures"
+description = "Carbon fibre reinforced brackets, ribs, and fairings for UAV and light aircraft applications."
+image       = "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
+
+[[params.applications]]
+title       = "Automotive Components"
+description = "Chopped CF enclosures, ducts, and structural brackets for motorsport and EV applications."
+image       = "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
+
+[[params.applications]]
+title       = "Marine & Sporting"
+description = "Lightweight composite hulls, paddle components, and performance sports equipment."
+image       = "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
+
+[[params.applications]]
+title       = "Bio-Composite Research"
+description = "Hemp-PLA and natural fibre composites for sustainable structural and packaging applications."
+image       = "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
+
+
+[[params.servicesPreview]]
+icon        = "🌿"
+title       = "Continuous Fibre Printing"
+description = "Carbon, Kevlar, and glass fibre continuous reinforcement in Markforged and Anisoprint systems — UTS up to 800 MPa."
+
+[[params.servicesPreview]]
+icon        = "⚙️"
+title       = "Chopped Fibre SLS"
+description = "Short carbon and glass fibre reinforced nylon powders — Nylon 12CF for functional structural parts without continuous fibre complexity."
+
+[[params.servicesPreview]]
+icon        = "♻️"
+title       = "Bio-Composite Materials"
+description = "Hemp fibre, flax, and jute reinforced PLA and bioresin composites for sustainable structural applications."
+
+[[params.servicesPreview]]
+icon        = "🔬"
+title       = "DfAM Consulting"
+description = "Design for additive manufacturing with composites — fibre path optimisation, anisotropy modelling, and test certification support."
+
+
+[[params.services]]
+name        = "Continuous Fibre Printing"
+description = "Carbon, Kevlar, and glass fibre continuous reinforcement in Markforged and Anisoprint systems — UTS up to 800 MPa."
+icon        = "🌿"
+image       = "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+
+[[params.services]]
+name        = "Chopped Fibre SLS"
+description = "Short carbon and glass fibre reinforced nylon powders — Nylon 12CF for functional structural parts without continuous fibre complexity."
+icon        = "⚙️"
+image       = "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+
+[[params.services]]
+name        = "Bio-Composite Materials"
+description = "Hemp fibre, flax, and jute reinforced PLA and bioresin composites for sustainable structural applications."
+icon        = "♻️"
+image       = "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+
+[[params.services]]
+name        = "DfAM Consulting"
+description = "Design for additive manufacturing with composites — fibre path optimisation, anisotropy modelling, and test certification support."
+icon        = "🔬"
+image       = "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+
+
+[[params.clusterLinks]]
+name        = "3dprintcomposites.com"
+url         = "https://3dprintcomposites.com"
+description = "Composite 3D printing"
+
+[[params.clusterLinks]]
+name        = "dmls3d.com"
+url         = "https://dmls3d.com"
+description = "Metal 3D printing"
+
+[[params.clusterLinks]]
+name        = "sendcutship.com"
+url         = "https://sendcutship.com"
+description = "Custom manufacturing"
+
+[[params.clusterLinks]]
+name        = "3dprintarchitecture.com"
+url         = "https://3dprintarchitecture.com"
+description = "Architecture AM"
+
+[[menu.main]]
+name = "Home"
+url  = "/"
+weight = 1
+[[menu.main]]
+name = "About"
+url  = "/about/"
+weight = 2
+[[menu.main]]
+name = "Articles"
+url  = "/articles/"
+weight = 3
+[[menu.main]]
+name = "Services"
+url  = "/services/"
+weight = 4
+[[menu.main]]
+name = "Contact"
+url  = "/contact/"
+weight = 5
+[[menu.main]]
+name = "Advertise"
+url  = "/advertise/"
+weight = 6
