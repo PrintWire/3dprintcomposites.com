@@ -1,9 +1,18 @@
 baseURL = "https://3dprintcomposites.com/"
 languageCode = "en-us"
 title = "3D Print Composites"
-theme = "printwire"
+
+[outputs]
+  home = ["HTML", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [params]
+siteName      = "3D Print Composites"
+logoHtml      = '3D&nbsp;PRINT&nbsp;<span class="ed-logo-accent">COMPOSITES</span>'
 tagline       = "Additive manufacturing with carbon fibre, glass fibre, Kevlar, and bio-composite materials for lightweight structural applications."
 description   = "3D Print Composites covers composite additive manufacturing — from continuous fibre reinforcement in FDM to chopped carbon fibre SLS and hemp bio-composite materials research."
 keywords      = "composite 3D printing, carbon fibre AM, continuous fibre printing, Kevlar 3D print, bio-composite AM, glass fibre additive manufacturing"
