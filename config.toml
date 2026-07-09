@@ -11,6 +11,7 @@ title = "3D Print Composites"
       unsafe = true
 
 [params]
+ogImage       = "/images/01_hero_polymer.png"
 siteName      = "3D Print Composites"
 logoHtml      = '3D&nbsp;PRINT&nbsp;<span class="ed-logo-accent">COMPOSITES</span>'
 tagline       = "Additive manufacturing with carbon fibre, glass fibre, Kevlar, and bio-composite materials for lightweight structural applications."
