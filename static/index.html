@@ -13,10 +13,10 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="3D Print Composites — Polymer &amp; Composite AM News &amp; Suppliers">
   <meta property="og:description" content="3D Print Composites: polymer, composite, and advanced-materials additive manufacturing news, research, and a directory connecting shops to suppliers.">
-  <meta property="og:image" content="https://3dprintcomposites.com/images/01_hero_polymer.png">
+  <meta property="og:image" content="https://3dprintcomposites.com/images/01_hero_continuous_carbon.png">
   <meta property="og:url" content="https://3dprintcomposites.com/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://3dprintcomposites.com/images/01_hero_polymer.png">
+  <meta name="twitter:image" content="https://3dprintcomposites.com/images/01_hero_continuous_carbon.png">
 </head>
 <body>
 
@@ -49,20 +49,15 @@
   <div class="ed-main">
 
     <!-- Featured Story -->
-    <article class="ed-hero">
-      <img src="images/01_hero_polymer.png" alt="Polymer 3D printing with filament and composite parts">
-      <div class="ed-hero-overlay"></div>
-      <div class="ed-hero-content">
-        <span class="ed-badge">Composites</span>
-        <h1><a href="#">Continuous Fiber Is Replacing Machined Aluminum</a></h1>
-        <div class="ed-hero-meta">
-          <span>June 26, 2026</span>
-          <span>·</span>
-          <span>8 min read</span>
-          <span>·</span>
-          <span>By PrintWire Editorial</span>
-        </div>
-        <p class="ed-hero-excerpt">From carbon-fiber tooling to recycled production filament, printed polymers and composites are taking on jobs that used to belong to metal and molds.</p>
+    <article class="ed-hero-split">
+      <div class="ed-hero-split-text">
+        <span class="ed-badge">Continuous-Fiber Composites</span>
+        <h1>3D-Printed Continuous-Fiber <span class="ed-logo-accent">Composites</span></h1>
+        <p class="ed-hero-excerpt">By laying continuous carbon and glass fiber inside printed polymer, additive manufacturing produces structural parts with the stiffness-to-weight of metal at a fraction of the mass.</p>
+        <a href="/articles/" class="ed-hero-cta">Explore Composite AM &rarr;</a>
+      </div>
+      <div class="ed-hero-visual">
+        <img src="images/01_hero_continuous_carbon.png" alt="Continuous-Fiber Composites">
       </div>
     </article>
 
@@ -111,7 +106,7 @@
     </div>
     <div class="ed-list">
       <article class="ed-list-item">
-        <img src="images/02_cf_tooling.png" alt="Carbon fiber printed tooling">
+        <img src="images/02_continuous_carbon.png" alt="Carbon fiber printed tooling">
         <div>
           <span class="ed-badge">Composites</span>
           <div class="ed-card-meta">June 24, 2026 · 9 min read</div>
@@ -120,7 +115,7 @@
         </div>
       </article>
       <article class="ed-list-item">
-        <img src="images/03_nylon_parts.png" alt="SLS nylon parts">
+        <img src="images/03_composite_drone.png" alt="SLS nylon parts">
         <div>
           <span class="ed-badge">Polymers</span>
           <div class="ed-card-meta">June 20, 2026 · 7 min read</div>
@@ -129,7 +124,7 @@
         </div>
       </article>
       <article class="ed-list-item">
-        <img src="images/07_recycled_pellets.png" alt="Recycled feedstock">
+        <img src="images/04_carbon_fiber.png" alt="Recycled feedstock">
         <div>
           <span class="ed-badge">Sustainability</span>
           <div class="ed-card-meta">June 18, 2026 · 10 min read</div>
@@ -145,27 +140,27 @@
     </div>
     <div class="ed-card-grid" style="grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2.5rem;">
       <a href="#" class="ed-card" style="text-align:center;">
-        <img class="ed-card-img" src="images/02_cf_tooling.png" alt="Tooling & Fixtures">
+        <img class="ed-card-img" src="images/05_fiber_reinforced.png" alt="Tooling & Fixtures">
         <div class="ed-card-body"><h3>Tooling &amp; Fixtures</h3></div>
       </a>
       <a href="#" class="ed-card" style="text-align:center;">
-        <img class="ed-card-img" src="images/04_flexible_tpu.png" alt="Flexible Parts">
+        <img class="ed-card-img" src="images/06_composite_bike.png" alt="Flexible Parts">
         <div class="ed-card-body"><h3>Flexible Parts</h3></div>
       </a>
       <a href="#" class="ed-card" style="text-align:center;">
-        <img class="ed-card-img" src="images/03_nylon_parts.png" alt="Production Parts">
+        <img class="ed-card-img" src="images/07_glass_fiber.png" alt="Production Parts">
         <div class="ed-card-body"><h3>Production Parts</h3></div>
       </a>
       <a href="#" class="ed-card" style="text-align:center;">
-        <img class="ed-card-img" src="images/06_composite_layup.png" alt="Composites">
+        <img class="ed-card-img" src="images/08_composite_lattice.png" alt="Composites">
         <div class="ed-card-body"><h3>Composites</h3></div>
       </a>
       <a href="#" class="ed-card" style="text-align:center;">
-        <img class="ed-card-img" src="images/05_filament_spools.png" alt="Filaments">
+        
         <div class="ed-card-body"><h3>Filaments</h3></div>
       </a>
       <a href="#" class="ed-card" style="text-align:center;">
-        <img class="ed-card-img" src="images/07_recycled_pellets.png" alt="Sustainability">
+        
         <div class="ed-card-body"><h3>Sustainability</h3></div>
       </a>
     </div>
@@ -348,7 +343,7 @@ document.querySelector('.ed-nav-toggle')?.addEventListener('click', () => {
     btn.title = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
   }
   const saved = localStorage.getItem('ed-theme');
-  setTheme(saved || 'dark');
+  setTheme(saved || 'light');
   btn.addEventListener('click', () => {
     const current = root.getAttribute('data-theme') || 'dark';
     setTheme(current === 'dark' ? 'light' : 'dark');
