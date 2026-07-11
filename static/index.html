@@ -102,36 +102,10 @@
     <!-- Analysis & Deep Dives -->
     <div class="ed-section-label">
       Analysis &amp; Deep Dives
-      <a href="#">View All &rarr;</a>
+      <a href="/articles/">View All &rarr;</a>
     </div>
-    <div class="ed-list">
-      <article class="ed-list-item">
-        <img src="images/02_continuous_carbon.png" alt="Carbon fiber printed tooling">
-        <div>
-          <span class="ed-badge">Composites</span>
-          <div class="ed-card-meta">June 24, 2026 · 9 min read</div>
-          <h3><a href="#">Continuous Carbon Fiber Tooling: A Cost-Benefit Case vs. Machined Aluminum</a></h3>
-          <p class="ed-card-excerpt">Printed CF jigs and fixtures are cheaper, lighter, and faster to iterate — here's where they actually beat machined aluminum on the shop floor.</p>
-        </div>
-      </article>
-      <article class="ed-list-item">
-        <img src="images/03_composite_drone.png" alt="SLS nylon parts">
-        <div>
-          <span class="ed-badge">Polymers</span>
-          <div class="ed-card-meta">June 20, 2026 · 7 min read</div>
-          <h3><a href="#">Nylon 12 vs. Nylon 11 for MJF Production Parts: A Complete Comparison</a></h3>
-          <p class="ed-card-excerpt">Strength, moisture uptake, and cost diverge between the two workhorse MJF powders. A production engineer's breakdown.</p>
-        </div>
-      </article>
-      <article class="ed-list-item">
-        <img src="images/04_carbon_fiber.png" alt="Recycled feedstock">
-        <div>
-          <span class="ed-badge">Sustainability</span>
-          <div class="ed-card-meta">June 18, 2026 · 10 min read</div>
-          <h3><a href="#">Recyclable Filament: Closing the Loop on Additive Waste</a></h3>
-          <p class="ed-card-excerpt">Post-consumer and reground feedstocks are finally hitting production-grade specs. What it takes to print at 100% regrind.</p>
-        </div>
-      </article>
+    <div class="ed-list" id="pwDeepDives">
+      <div style="padding:1.5rem;color:var(--text-faint);">Loading analysis…</div>
     </div>
 
     <!-- Applications -->
@@ -457,6 +431,31 @@ document.querySelector('.ed-nav-toggle')?.addEventListener('click', () => {
       ? top.map(card).join('')
       : '<div style="grid-column:1/-1;text-align:center;padding:2rem;color:var(--text-faint);">Unable to load news.</div>';
   }
+})();
+
+// -- Analysis & Deep Dives: PrintWire catalog in list format --
+(function(){
+  var box = document.getElementById('pwDeepDives');
+  if (!box) return;
+  function esc(s){var d=document.createElement('div');d.appendChild(document.createTextNode(s==null?'':s));return d.innerHTML;}
+  var empty = '<div style="padding:1.5rem;color:var(--text-faint);">In-depth analysis and deep dives are on the way — check back soon.</div>';
+  fetch('network.json',{cache:'no-store'})
+    .then(function(r){ return r.ok ? r.json() : []; })
+    .then(function(items){
+      items = (items || []).slice();
+      items.sort(function(a,b){ return (b.iso||'').localeCompare(a.iso||''); });
+      if (!items.length){ box.innerHTML = empty; return; }
+      box.innerHTML = items.slice(0,8).map(function(a){
+        var img = a.img ? '<img src="'+esc(a.img)+'" alt="" loading="lazy">' : '';
+        var meta = esc(a.date||'') + (a.origin ? ' · '+esc(a.origin) : '');
+        return '<article class="ed-list-item">'+img+'<div>'+
+          '<div class="ed-card-meta">'+meta+'</div>'+
+          '<h3><a href="'+esc(a.url)+'">'+esc(a.title)+'</a></h3>'+
+          '<p class="ed-card-excerpt">'+esc(a.summary||'')+'</p>'+
+          '</div></article>';
+      }).join('');
+    })
+    .catch(function(){ box.innerHTML = empty; });
 })();
 </script>
 </body>
